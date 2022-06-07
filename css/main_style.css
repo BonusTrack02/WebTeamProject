@@ -1,16 +1,20 @@
 *{
     margin: 0px; padding: 0px;
 }
-.logo{
+/* .logo{
         width: 100px; height: 100px;
         position: absolute;
         left: 20px;
         top: 10px;
+    } */
+    #logo{
+        width: 100px; height: 100px;
+
     }
 
 .menu{
     position: absolute;
-    left: 50px;
+    left: 30px;
     top: 150px;
     width: 230px;
     
@@ -35,3 +39,22 @@
 .item a:hover{background-color: lightblue; font-weight: bold; }
 #item_1{border-top: 1px solid royalblue;}
 #item_4{border-bottom: 1px solid royalblue;}
+
+.main{
+    border: 1px solid black;
+    width: 75%; height: 550px;
+    position: absolute;
+    left: 300px;
+    top: 150px;
+}
+
+.siteName{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+
+
+
+
+
