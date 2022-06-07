@@ -1,0 +1,152 @@
+{
+    "response": {
+        "header": {
+            "resultCode": "00",
+            "resultMsg": "NORMAL SERVICE."
+        },
+        "body": {
+            "items": {
+                "item": [
+                    {
+                        "analdate": "2022-06-03 12",
+                        "area": "     587,195",
+                        "d1": 21,
+                        "d2": 73,
+                        "d3": 6,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 78,
+                        "meanavg": 60,
+                        "mini": 9,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 6
+                    },
+                    {
+                        "analdate": "2022-06-03-18",
+                        "area": "     587,195",
+                        "d1": 98,
+                        "d2": 2,
+                        "d3": 0,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 54,
+                        "meanavg": 28,
+                        "mini": 11,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 6
+                    },
+                    {
+                        "analdate": "2022-06-03-21",
+                        "area": "     587,195",
+                        "d1": 99,
+                        "d2": 1,
+                        "d3": 0,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 47,
+                        "meanavg": 24,
+                        "mini": 10,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 5
+                    },
+                    {
+                        "analdate": "2022-06-04-00",
+                        "area": "     587,195",
+                        "d1": 100,
+                        "d2": 0,
+                        "d3": 0,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 44,
+                        "meanavg": 23,
+                        "mini": 10,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 5
+                    },
+                    {
+                        "analdate": "2022-06-04-03",
+                        "area": "     587,195",
+                        "d1": 77,
+                        "d2": 23,
+                        "d3": 1,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 66,
+                        "meanavg": 42,
+                        "mini": 19,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 6
+                    },
+                    {
+                        "analdate": "2022-06-04-18",
+                        "area": "     587,195",
+                        "d1": 94,
+                        "d2": 6,
+                        "d3": 0,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 57,
+                        "meanavg": 31,
+                        "mini": 14,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 6
+                    },
+                    {
+                        "analdate": "2022-06-04-21",
+                        "area": "     587,195",
+                        "d1": 98,
+                        "d2": 2,
+                        "d3": 0,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 49,
+                        "meanavg": 25,
+                        "mini": 10,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 5
+                    },
+                    {
+                        "analdate": "2022-06-05-00",
+                        "area": "     587,195",
+                        "d1": 100,
+                        "d2": 0,
+                        "d3": 0,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 44,
+                        "meanavg": 23,
+                        "mini": 10,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 5
+                    },
+                    {
+                        "analdate": "2022-06-05-03",
+                        "area": "     587,195",
+                        "d1": 95,
+                        "d2": 5,
+                        "d3": 0,
+                        "d4": 0,
+                        "doname": "전국",
+                        "maxi": 53,
+                        "meanavg": 31,
+                        "mini": 14,
+                        "regioncode": 0,
+                        "searchcd": "jeongug",
+                        "std": 5
+                    }
+                ]
+            },
+            "numOfRows": 20,
+            "pageNo": 1,
+            "totalCount": 9
+        }
+    }
+}
