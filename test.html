@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script>
+            // $(document).ready(function() {
+            //     $.ajax({
+            //         dataType : "jsonp",
+            //         url : "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.xml?key=f5eef3421c602c6cb7ea224104795888&targetDt=20120101",
+            //         success : function(data) {
+            //             $(data).find("dailyBoxOffice").each(function() {
+            //                 var name = "movie name : " + $(this).find("movieNm").text() + "<br>"
+            //                 $('#test').append(name)
+            //             })
+            //         }, 
+            //         error : function(e) {
+            //             console.log(e)
+            //         }
+            //     })
+            // })
+            function loadPhp() {
+                document.location.href= "./php/test.php"
+            }
+        </script>
+    </head>
+    <body>
+        <p id="test">
+
+        </p>
+        <button onclick="loadPhp()">로드</button>
+    </body>
+</html>

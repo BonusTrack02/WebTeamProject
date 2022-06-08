@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TOP100 mountain</title>
+
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/templatemo-xtra-blog.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/plantDictionary_seo.js"></script>
+    <link rel="stylesheet" href="./css/plantDictionary.css">
+
+
+</head>
+<body onload="aaa(),bbb(),ccc(),ddd(),eee(),fff()">
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <img src="./image/list.svg" alt="Bootstrap" width="32" height="32">
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><img src="./image/tree.svg" alt="Bootstrap" width="32" height="32"></div>            
+                <h1 class="text-center">100대 명산</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="index.sample.html" class="tm-nav-link">
+                        <img src="./image/signpost.svg" alt="Bootstrap" width="32" height="32">
+                        등산로 정보
+                    </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <img src="./image/shop.svg" alt="Bootstrap" width="32" height="32">
+                        음식점 찾기
+                    </a></li>
+                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                        <img src="./image/cloud-sun.svg" alt="Bootstrap" width="32" height="32">
+                        날씨정보
+                    </a></li>
+                    <li class="tm-nav-item active"><a href="contact.html" class="tm-nav-link">
+                        <img src="./image/journal-bookmark-fill.svg" alt="Bootstrap" width="32" height="32">
+                        식물도감
+                    </a></li>
+                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                        <img src="./image/exclamation-triangle.svg" alt="Bootstrap" width="32" height="32">
+                        공지사항
+                    </a></li>
+                </ul>
+            </nav>
+    
+            <p class="tm-mb-80 pr-5 text-white">
+                "100대 명산"은 "2002년 세계 산의 해"를 기념하고 산의 가치와 중요성을 새롭게 인식하기 위해 2002년 10월 산림청에서 선정공표하였습니다.
+                WeAreGroot는 100대 명산의 모든 정보를 소개합니다.
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>            
+
+
+            <div class="album py-5 bg-light">
+                
+                <!-- 식물도감 ******-->
+                <div class="cards" style="margin-left: 20px; margin-right: 20px;">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+
+                        <div class="col">
+                            <div class="card shadow-sm" style="height: 400px;">
+                              <img class="card-img" id="tree01" src="https://www.forest.go.kr/images/data/down/story/mok1-2.jpg" width="100%" height="200" >
+                                <div class="card-body">
+                                  <h4 class="card-title"  id="card-title01">(fskname)</h4>
+                                  <p class="card-text" style="height: 80px;" id="card-text01">(fsguide)</p>
+                                
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="btn btn-sm btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                            더보기
+                                          </button>
+                                    </div>
+          
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+
+
+                        <div class="col">
+                            <div class="card shadow-sm" style="height: 400px;">
+                              <img class="card-img" id="tree02" src="https://www.forest.go.kr/images/data/down/story/mok1-2.jpg" width="100%" height="200" >
+                                <div class="card-body">
+                                  <h4 class="card-title" id="card-title02">(fskname)</h4>
+                                  <p class="card-text" style="height: 80px;" id="card-text02">(fsguide)</p>
+                                
+                                    <div class="d-flex justify-content-between align-items-center">
+                                  <button type="btn" class="btn btn-sm btn-outline-success">상세보기</button>
+                                    </div>
+          
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card shadow-sm" style="height: 400px;">
+                              <img class="card-img" id="tree03" src="https://www.forest.go.kr/images/data/down/story/mok1-2.jpg" width="100%" height="200" >
+                                <div class="card-body">
+                                  <h4 class="card-title" id="card-title03">(fskname)</h4>
+                                  <p class="card-text" style="height: 80px;" id="card-text03">(fsguide)</p>
+                                
+                                    <div class="d-flex justify-content-between align-items-center">
+                                  <button type="btn" class="btn btn-sm btn-outline-success">상세보기</button>
+                                    </div>
+          
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        <div class="collapse" id="collapseExample" style="margin-top: 10px;">
+                            <div class="card card-body" id="collapse01">
+                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5" style="margin-top: 5px;">
+                    
+                        <div class="col">
+                            <div class="card shadow-sm" style="height: 400px;">
+                              <img class="card-img" id="tree04" src="https://www.forest.go.kr/images/data/down/story/mok1-2.jpg" width="100%" height="200" >
+                                <div class="card-body">
+                                  <h4 class="card-title" id="card-title04">(fskname)</h4>
+                                  <p class="card-text" style="height: 80px;" id="card-text04">(fsguide)</p>
+                                
+                                    <div class="d-flex justify-content-between align-items-center">
+                                         <button type="btn" class="btn btn-sm btn-outline-success">상세보기</button>
+                                    </div>
+          
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card shadow-sm" style="height: 400px;">
+                              <img class="card-img" id="tree05" src="https://www.forest.go.kr/images/data/down/story/mok1-2.jpg" width="100%" height="200" >
+                                <div class="card-body">
+                                  <h4 class="card-title" id="card-title05">(fskname)</h4>
+                                  <p class="card-text" style="height: 80px;" id="card-text05">(fsguide)</p>
+                                
+                                    <div class="d-flex justify-content-between align-items-center">
+                                  <button type="btn" class="btn btn-sm btn-outline-success">상세보기</button>
+                                    </div>
+          
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card shadow-sm" style="height: 400px;">
+                              <img class="card-img" id="tree06" src="https://www.forest.go.kr/images/data/down/story/mok1-2.jpg" width="100%" height="200" >
+                                <div class="card-body">
+                                  <h4 class="card-title" id="card-title06">(fskname)</h4>
+                                  <p class="card-text" style="height: 80px;" id="card-text06">(fsguide)</p>
+                                
+                                    <div class="d-flex justify-content-between align-items-center">
+                                  <button type="btn" class="btn btn-sm btn-outline-success">상세보기</button>
+                                    </div>
+          
+                                </div>
+                            </div>
+                        </div>
+
+                
+
+                    </div>
+                    
+                </div>
+                <!-- 식물도감 ****** -->
+    
+            </div>
+            <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Next</a>
+                </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3" style="margin-right: 10px;">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item active">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="row tm-row">
+                <hr class="col-12">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" class="tm-external-link">WeAreGroot</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    &copy; by WeAreGroot
+                </div>
+            </footer>
+        </main>
+    </div>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/templatemo-script.js"></script> -->
+</body>
+</html>

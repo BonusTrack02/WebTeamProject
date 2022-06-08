@@ -1,10 +1,3 @@
-/*
-
-TemplateMo 553 Xtra Blog
-
-https://templatemo.com/tm-553-xtra-blog
-
-*/
 
 html { overflow-x: hidden; }
 
@@ -12,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 2em;
     overflow-x: hidden;
 }
@@ -26,6 +19,9 @@ hr {
 .form-control::-webkit-input-placeholder { color: #999; }  
 .form-control:-ms-input-placeholder { color: #999; }  
 .form-control::placeholder { color: #999; }
+
+.card-img{margin-bottom: 10px; object-fit: cover; padding-top: 20px; padding-left: 20px; padding-right: 20px;}
+
 
 .tm-header {
     background-color: #d3e8d2;

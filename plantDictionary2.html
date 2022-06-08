@@ -3,20 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Xtra Blog</title>
+	<title>TOP100 mountain</title>
+
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
-<!--
-    
-TemplateMo 553 Xtra Blog
 
-https://templatemo.com/tm-553-xtra-blog
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
 
--->
+    <script src="./js/plantDictionary.js"></script>
+    <link rel="stylesheet" href="./css/plantDictionary.css">
+
+
 </head>
-<body>
+<body onload="aaa()">
 	<header class="tm-header" id="tm-header">
         <div class="tm-header-wrapper">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
@@ -71,111 +74,37 @@ https://templatemo.com/tm-553-xtra-blog
             </div>            
 
 
-
             <div class="album py-5 bg-light">
-
+                
+                <!-- 식물도감 ******-->
                 <div class="cards" style="margin-left: 20px; margin-right: 20px;">
-    
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
-    
-                        <div class="col">
-                          <div class="card shadow-sm">
-                            <img class="card-img" src="./image/flag_korea.png" width="100%" height="200" style="object-fit: cover; padding-top: 20px; padding-left: 20px; padding-right: 20px;" >
-        
-                            <div class="card-body">
-                                <h4 class="card-title">가래나무(fskname)</h4>
-                                <p class="card-text">쌍떡잎식물 가래나무목 : 가래나무과의 낙엽활엽 교목(fsguide)</p>
-                              
-                              <div class="d-flex justify-content-between align-items-center">
-                                <button type="btn" class="btn btn-sm btn-outline-secondary">상세보기</button>
-                              </div>
-        
-                            </div>
-                          </div>
-                        </div>
-    
+
                         <div class="col">
                             <div class="card shadow-sm">
-                              <img class="card-img" src="./image/flag_korea.png" width="100%" height="200" style="object-fit: cover; padding-top: 20px; padding-left: 20px; padding-right: 20px;" >
-          
-                              <div class="card-body">
-                                  <h4 class="card-title">가래나무(fskname)</h4>
-                                  <p class="card-text">쌍떡잎식물 가래나무목 : 가래나무과의 낙엽활엽 교목(fsguide)</p>
+                              <img class="card-img" id="tree01" src="https://www.forest.go.kr/images/data/down/story/mok1-2.jpg" width="100%" height="200" >
+                                <div class="card-body">
+                                  <h4 class="card-title" id="card-title01">(fskname)</h4>
+                                  <p class="card-text" id="card-text01">(fsguide)</p>
                                 
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <button type="btn" class="btn btn-sm btn-outline-secondary">상세보기</button>
-                                </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                  <button type="btn" class="btn btn-sm btn-outline-success">상세보기</button>
+                                    </div>
           
-                              </div>
+                                </div>
                             </div>
                         </div>
-    
-                        <div class="col">
-                            <div class="card shadow-sm">
-                              <img class="card-img" src="./image/flag_korea.png" width="100%" height="200" style="object-fit: cover; padding-top: 20px; padding-left: 20px; padding-right: 20px;" >
-          
-                              <div class="card-body">
-                                  <h4 class="card-title">가래나무(fskname)</h4>
-                                  <p class="card-text">쌍떡잎식물 가래나무목 : 가래나무과의 낙엽활엽 교목(fsguide)</p>
-                                
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <button type="btn" class="btn btn-sm btn-outline-secondary">상세보기</button>
-                                </div>
-          
-                              </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="card shadow-sm">
-                              <img class="card-img" src="./image/flag_korea.png" width="100%" height="200" style="object-fit: cover; padding-top: 20px; padding-left: 20px; padding-right: 20px;" >
-          
-                              <div class="card-body">
-                                  <h4 class="card-title">가래나무(fskname)</h4>
-                                  <p class="card-text">쌍떡잎식물 가래나무목 : 가래나무과의 낙엽활엽 교목(fsguide)</p>
-                                
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <button type="btn" class="btn btn-sm btn-outline-secondary">상세보기</button>
-                                </div>
-          
-                              </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="card shadow-sm">
-                              <img class="card-img" src="./image/flag_korea.png" width="100%" height="200" style="object-fit: cover; padding-top: 20px; padding-left: 20px; padding-right: 20px;" >
-          
-                              <div class="card-body">
-                                  <h4 class="card-title">가래나무(fskname)</h4>
-                                  <p class="card-text">쌍떡잎식물 가래나무목 : 가래나무과의 낙엽활엽 교목(fsguide)</p>
-                                
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <button type="btn" class="btn btn-sm btn-outline-secondary">상세보기</button>
-                                </div>
-          
-                              </div>
-                            </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="card shadow-sm">
-                              <img class="card-img" src="./image/flag_korea.png" width="100%" height="200" style="object-fit: cover; padding-top: 20px; padding-left: 20px; padding-right: 20px;" >
-          
-                              <div class="card-body">
-                                  <h4 class="card-title">가래나무(fskname)</h4>
-                                  <p class="card-text">쌍떡잎식물 가래나무목 : 가래나무과의 낙엽활엽 교목(fsguide)</p>
-                                
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <button type="btn" class="btn btn-sm btn-outline-secondary">상세보기</button>
-                                </div>
-          
-                              </div>
-                            </div>
-                        </div>
-                    </div>            
+                          
+
+
+
+
+
+
+
+                    </div>
                 </div>
-    
+                <!-- 식물도감 ****** -->
     
             </div>
             <div class="row tm-row tm-mt-100 tm-mb-75">
@@ -214,6 +143,7 @@ https://templatemo.com/tm-553-xtra-blog
             </footer>
         </main>
     </div>
-    <script src="js/templatemo-script.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/templatemo-script.js"></script> -->
 </body>
 </html>

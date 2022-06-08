@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <script src="./js/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $.ajax({
+                    dataType : "jsonp",
+                    url : "http://openapi.forest.go.kr/openapi/service/cultureInfoService/fStoryOpenAPI?searchWrd=%EA%B4%91%EB%8C%80%EC%8B%B8%EB%A6%AC&ServiceKey=nBR4XWlO18qVaMdp7DKDosaixxVayXRO6J6S7ZoFT8INdCLInf2cx%2BepbR1RJ%2FHBDIumg8qDmHDiuSFjCPF2Lg%3D%3D",
+                    success : function(data) {
+                        $(data).find("item").each(function() {
+                            var name = "수목명 : " + $(this).find("fskname").text() + "<br>"
+                            $('#test').append(name)
+                        })
+                    }
+                })
+            })
+        </script> -->
+
+        <script>
+            function loadPhp() {
+                document.location.href= "./php/testcopy.php"
+            }
+        </script>
+
+    </head>
+    <body>
+        <p id="test">
+            text
+        </p>
+        <button onclick="loadPhp()">로드</button>
+    </body>
+</html>
