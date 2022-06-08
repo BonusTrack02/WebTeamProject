@@ -1,5 +1,5 @@
 
-function aaa() {
+function plantDictionary_seo() {
 
     var xhr = new XMLHttpRequest()
     xhr.onreadystatechange = function () {
@@ -37,6 +37,7 @@ function bbb() {
             var parse = JSON.parse(s)
             document.getElementById("card-title02").innerHTML = parse.fskname
             document.getElementById("card-text02").innerHTML = parse.fsguide
+            document.getElementById("collapse02").innerHTML = parse.fskname +' : '+ parse.fslifetime
 
             var urlNum = parse.imgfilename
             var url= "https://www.forest.go.kr/images/data/down/story/" + urlNum
@@ -63,6 +64,7 @@ function ccc() {
             var parse = JSON.parse(s)
             document.getElementById("card-title03").innerHTML = parse.fskname
             document.getElementById("card-text03").innerHTML = parse.fsguide
+            document.getElementById("collapse03").innerHTML = parse.fskname +' : '+ parse.fslifetime
 
             var urlNum = parse.imgfilename
             var url= "https://www.forest.go.kr/images/data/down/story/" + urlNum
@@ -89,6 +91,7 @@ function ddd() {
             var parse = JSON.parse(s)
             document.getElementById("card-title04").innerHTML = parse.fskname
             document.getElementById("card-text04").innerHTML = parse.fsguide
+            document.getElementById("collapse04").innerHTML = parse.fskname +' : '+ parse.fslifetime
 
             var urlNum = parse.imgfilename
             var url= "https://www.forest.go.kr/images/data/down/story/" + urlNum
@@ -115,6 +118,7 @@ function eee() {
             var parse = JSON.parse(s)
             document.getElementById("card-title05").innerHTML = parse.fskname
             document.getElementById("card-text05").innerHTML = parse.fsguide
+            document.getElementById("collapse05").innerHTML = parse.fskname +' : '+ parse.fslifetime
 
             var urlNum = parse.imgfilename
             var url= "https://www.forest.go.kr/images/data/down/story/" + urlNum
@@ -141,6 +145,7 @@ function fff() {
             var parse = JSON.parse(s)
             document.getElementById("card-title06").innerHTML = parse.fskname
             document.getElementById("card-text06").innerHTML = parse.fsguide
+            document.getElementById("collapse06").innerHTML = parse.fskname +' : '+ parse.fslifetime
 
             var urlNum = parse.imgfilename
             var url= "https://www.forest.go.kr/images/data/down/story/" + urlNum

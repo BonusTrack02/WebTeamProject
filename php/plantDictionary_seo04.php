@@ -37,8 +37,9 @@ $xml2 = simplexml_load_string($response2);
 $a = array();
 $a['fskname']= $xml -> body -> items -> item -> fskname."";
 $a['fsguide']= $xml -> body -> items -> item -> fsguide."";
-$a['imgfilename']= $xml2 -> body -> items -> item -> imgfilename."";
+$a['fslifetime']= $xml -> body -> items -> item -> fslifetime."";
 
+$a['imgfilename']= $xml2 -> body -> items -> item -> imgfilename."";
 //타입확인
 //var_dump($xml -> body -> items -> item -> fskname."");
 

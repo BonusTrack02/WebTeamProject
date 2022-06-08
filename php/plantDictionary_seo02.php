@@ -1,5 +1,6 @@
 <?php
 
+
 header('Content-Type=application/json; charset=utf-8');
 
 $treename = '은행나무';
@@ -37,6 +38,8 @@ $xml2 = simplexml_load_string($response2);
 $a = array();
 $a['fskname']= $xml -> body -> items -> item -> fskname."";
 $a['fsguide']= $xml -> body -> items -> item -> fsguide."";
+$a['fslifetime']= $xml -> body -> items -> item -> fslifetime."";
+
 $a['imgfilename']= $xml2 -> body -> items -> item -> imgfilename."";
 
 //타입확인
