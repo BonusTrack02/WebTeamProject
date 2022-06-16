@@ -74,7 +74,6 @@ hr {
 .tm-main {
     margin-left: 400px;
     padding: 80px 100px 25px;
-    width: 100%;
 }
 
 .tm-post { max-width: 470px; }
@@ -258,7 +257,7 @@ ul {
 }
 
 .tm-btn-primary {    
-    background-color: #516352;
+    background-color: #0CC;
     color: white;  
     padding: 8px 43px;
     border: none;
@@ -267,7 +266,7 @@ ul {
 .tm-btn-small { padding: 8px 33px; }
 
 .tm-btn-primary:hover {
-    background-color: #516352;
+    background-color: #09b6b6;
     color: white;
 }
 
@@ -291,7 +290,7 @@ ul {
 
 .tm-paging-item .tm-paging-link:hover,
 .tm-paging-item.active .tm-paging-link {
-    background-color: #516352;
+    background-color: #0CC;
     color: white;
 }
 
@@ -301,8 +300,8 @@ ul {
     cursor: not-allowed;
 }
 
-.tm-external-link { color: #516352; }
-.tm-external-link:hover { color: #516352; }
+.tm-external-link { color: #0CC; }
+.tm-external-link:hover { color: #09b6b6; }
 
 .tm-paging-wrapper {
     display: flex;
@@ -524,7 +523,7 @@ a:hover figcaption { color: #056767; }
     .tm-search-form { justify-content: flex-start; }
     .tm-main { padding: 60px 10px; }
 
-    .tm-prev-next-wrapper,
+    /* .tm-prev-next-wrapper, */
     .tm-paging-wrapper {
         flex: 0 0 100%;
         max-width: 100%;
@@ -581,6 +580,15 @@ a:hover figcaption { color: #056767; }
     }
 
     .tm-contact-right { padding-left: 15px; }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    
 }
 
 @media (max-width: 575px) {
