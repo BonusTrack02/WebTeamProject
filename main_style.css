@@ -1,0 +1,22 @@
+#spinner1, #spinner2{
+  background-color: #d3e8d2; 
+  border:#d3e8d2;
+}
+
+#spinner1:hover, #spinner2:hover{
+    background-color: #5e795c;   
+}
+
+#spinner1:focus, #spinner2:focus{
+    background-color: #5e795c;
+    
+}
+
+.itemHide{
+  display: none;
+}
+
+
+
+
+
