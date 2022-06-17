@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TOP100 mountain</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main_style.css">
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <img src="./image/list.svg" alt="Bootstrap" width="32" height="32">
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><img src="./image/tree.svg" alt="Bootstrap" width="32" height="32"></div>            
+                <h1 class="text-center">등산등산</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="main_trail.html" class="tm-nav-link">
+                        <img src="./image/signpost.svg" alt="Bootstrap" width="32" height="32">
+                        등산로 정보
+                    </a></li>
+                    <li class="tm-nav-item"><a href="#" class="tm-nav-link">
+                        <img src="./image/shop.svg" alt="Bootstrap" width="32" height="32">
+                        음식점 찾기
+                    </a></li>
+                    <li class="tm-nav-item"><a href="#" class="tm-nav-link">
+                        <img src="./image/cloud-sun.svg" alt="Bootstrap" width="32" height="32">
+                        날씨정보
+                    </a></li>
+                    <li class="tm-nav-item"><a href="plantDictionary_seo.html" class="tm-nav-link">
+                        <img src="./image/journal-bookmark-fill.svg" alt="Bootstrap" width="32" height="32">
+                        식물도감
+                    </a></li>
+                    <li class="tm-nav-item"><a href="#" class="tm-nav-link">
+                        <img src="./image/exclamation-triangle.svg" alt="Bootstrap" width="32" height="32">
+                        공지사항
+                    </a></li>
+                </ul>
+            </nav>
+    
+            <p class="tm-mb-80 pr-5 text-white">
+                Xtra Blog is a multi-purpose HTML template from TemplateMo website. Left side is a sticky menu bar. Right side content will scroll up and down.
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>      
+            
+            <div class="d-inline-flex p-3" style="position: absolute; top: 120px; left: 420px;" id="cityMt">
+                <div class="dropdown p-2" id="cities">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="spinner1">
+                        행정구역
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li onclick="selected('seo')"><a class="dropdown-item seo" href="#">서울/경기</a></li>
+                        <li onclick="selected('kang')"><a class="dropdown-item kang" href="#">강원도</a></li>
+                        <li onclick="selected('chN')"><a class="dropdown-item chN" href="#">충청북도</a></li>
+                        <li onclick="selected('chS')"><a class="dropdown-item chS" href="#">충청남도</a></li>
+                        <li onclick="selected('kyN')"><a class="dropdown-item kyN" href="#">경상북도</a></li>
+                        <li onclick="selected('kyS')"><a class="dropdown-item kyS" href="#">경상남도</a></li>
+                        <li onclick="selected('jnN')"><a class="dropdown-item jnN" href="#">전라북도</a></li>
+                        <li onclick="selected('jnS')"><a class="dropdown-item jnS" href="#">전라남도</a></li>
+                        <li onclick="selected('jeju')"><a class="dropdown-item jeju" href="#">제주도</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown p-2" id="mountain">
+                    <button class="btn btn-primary  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="spinner2">
+                        산
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li class="kang" id="mt01"><a class="dropdown-item" href="#">가리산</a></li>
+                        <li class="kang" id="mt02"><a class="dropdown-item"  href="#">가리왕산</a></li>
+                        <li class="kyS" id="mt03"><a class="dropdown-item" href="#">가야산</a></li>
+                        <li class="kyS kyN" id="mt04"><a class="dropdown-item"href="#">가지산</a></li>
+                        <li class="seo" id="mt05"><a class="dropdown-item" href="#">감악산</a></li>
+                        <li class="jnN jnS" id="mt06"><a class="dropdown-item" href="#">강천산</a></li>
+                        <li class="chS" id="mt07"><a class="dropdown-item"href="#">계룡산</a></li>
+                        <li class="kang" id="mt08"><a class="dropdown-item"href="#">계방산</a></li>
+                        <li class="kang" id="mt09"><a class="dropdown-item"href="#">공작산</a></li>
+                        <li class="seo"id="mt10"><a class="dropdown-item" href="#">관악산</a></li>
+                        <li class="kyN chN" id="mt11"><a class="dropdown-item" href="#">구병산</a></li>
+                        <li class="kyS"id="mt12"><a class="dropdown-item"href="#">금산</a></li>
+                        <li class="chN"id="mt13"><a class="dropdown-item" href="#">금수산</a></li>
+                        <li class="chN"id="mt14"><a class="dropdown-item"href="#">금오산</a></li>
+                        <li class="kyS"id="mt15"><a class="dropdown-item"href="#">금정산</a></li>
+                        <li class="jnS"id="mt16"><a class="dropdown-item"href="#">깃대봉</a></li>
+                        <li class="kyN"id="mt17"><a class="dropdown-item"href="#">남산(금오산)</a></li>
+                        <li class="kyN"id="mt18"><a class="dropdown-item"href="#">내연산</a></li>
+                        <li class="jnN"id="mt19"><a class="dropdown-item" href="#">내장산</a></li>
+                        <li class="chS jnN"id="mt20"><a class="dropdown-item"href="#">대둔산</a></li>
+                        <li class="kang"id="mt21"><a class="dropdown-item"href="#">대암산</a></li>
+                        <li class="kyN chN"id="mt22"><a class="dropdown-item"href="#">대야산</a></li>
+                        <li class="chS"id="mt23"><a class="dropdown-item"href="#">덕숭산(수덕산)</a></li>
+                        <li class="jnN"id="mt24"><a class="dropdown-item"href="#">덕유산</a></li>
+                        <li class="kang"id="mt25"><a class="dropdown-item"href="#">덕항산</a></li>
+                        <li class="chN"id="mt26"><a class="dropdown-item"href="#">도락산</a></li>
+                        <li class="seo"id="mt27"><a class="dropdown-item"href="#">도봉산</a></li>
+                        <li class="jnS"id="mt28"><a class="dropdown-item"href="#">두륜산</a></li>
+                        <li class="kang"id="mt29"><a class="dropdown-item"href="#">두타산</a></li>
+                        <li class="seo"id="mt30"><a class="dropdown-item"href="#">마니산</a></li>
+                        <li class="jnN"id="mt31"><a class="dropdown-item"href="#">마이산</a></li>
+                        <li class="kang seo"id="mt32"><a class="dropdown-item" href="#">명성산</a></li>
+                        <li class="seo"id="mt33"><a class="dropdown-item"href="#">명지산</a></li>
+                        <li class="jnN"id="mt34"><a class="dropdown-item"href="#">모악산</a></li>
+                        <li class="jnS"id="mt35"><a class="dropdown-item"href="#">무등산</a></li>
+                        <li class="kyS"id="mt36"><a class="dropdown-item"href="#">무학산</a></li>
+                        <li class="kyS"id="mt37"><a class="dropdown-item" href="#">미륵산</a></li>
+                        <li class="chN jnN"id="mt38"><a class="dropdown-item" href="#">민주지산</a></li>
+                        <li class="jnS jnN"id="mt39"><a class="dropdown-item" href="#">방장산</a></li>
+                        <li class="kang"id="mt40"><a class="dropdown-item" href="#">방태산</a></li>
+                        <li class="kang"id="mt41"><a class="dropdown-item" href="#">백덕산</a></li>
+                        <li class="jnN jnS"id="mt42"><a  class="dropdown-item"href="#">백암산</a></li>
+                        <li class="jnS"id="mt43"><a class="dropdown-item"href="#">백운산(광양)</a></li>
+                        <li class="kang"id="mt44"><a class="dropdown-item" href="#">백운산(정선)</a></li>
+                        <li class="seo kang"id="mt45"><a class="dropdown-item"href="#">백운산(포천)</a></li>
+                        <li class="jnN"id="mt46"><a class="dropdown-item"href="#">변산</a></li>
+                        <li class="seo"id="mt47"><a class="dropdown-item"href="#">북한산</a></li>
+                        <li class="kyN"id="mt48"><a class="dropdown-item"href="#">비슬산</a></li>
+                        <li class="kang"id="mt49"><a class="dropdown-item"href="#">삼악산</a></li>
+                        <li class="chS chN"id="mt50"><a class="dropdown-item"href="#">서대산</a></li>
+                        <li class="jnN" id="mt51"><a class="dropdown-item"href="#">선운산</a></li>
+                        <li class="kang"id="mt52"><a class="dropdown-item"href="#">설악산</a></li>
+                        <li class="kyN"id="mt53"><a class="dropdown-item"href="#">성인봉</a></li>
+                        <li class="kyN chN"id="mt54"><a class="dropdown-item"href="#">소백산</a></li>
+                        <li class="seo"id="mt55"><a class="dropdown-item"href="#">소요산</a></li>
+                        <li class="kyN chN"id="mt56"><a class="dropdown-item"href="#">속리산</a></li>
+                        <li class="kyS"id="mt57"><a class="dropdown-item" href="#">신불산</a></li>
+                        <li class="kyS"id="mt58"><a class="dropdown-item"href="#">연화산</a></li>
+                        <li class="kang"id="mt59"><a class="dropdown-item"href="#">오대산</a></li>
+                        <li class="kang"id="mt60"><a class="dropdown-item"href="#">오봉산</a></li>
+                        <li class="seo"id="mt61"><a class="dropdown-item"href="#">용문산</a></li>
+                        <li class="kang"id="mt62"><a class="dropdown-item"href="#">용화산</a></li>
+                        <li class="kyN kyS"id="mt63"><a class="dropdown-item"href="#">운문산</a></li>
+                        <li class="seo"id="mt64"><a class="dropdown-item"href="#">운악산</a></li>
+                        <li class="jnN"id="mt65"><a class="dropdown-item"href="#">운장산</a></li>
+                        <li class="chN"id="mt66"><a class="dropdown-item"href="#">월악산</a></li>
+                        <li class="jnS"id="mt67"><a class="dropdown-item"href="#">월출산</a></li>
+                        <li class="seo"id="mt68"><a class="dropdown-item"href="#">유명산</a></li>
+                        <li class="kang kyN"id="mt69"><a class="dropdown-item"href="#">응봉산</a></li>
+                        <li  class="jnN"id="mt70"><a class="dropdown-item"href="#">장안산</a></li>
+                        <li  class="kyS"id="mt71"><a class="dropdown-item"href="#">재약산</a></li>
+                        <li  class="jnN"id="mt72"><a class="dropdown-item"href="#">적상산</a></li>
+                        <li class="kang"id="mt73"><a  class="dropdown-item"href="#">점봉산</a></li>
+                        <li  class="jnS"id="mt74"><a class="dropdown-item"href="#">조계산</a></li>
+                        <li  class="kyN"id="mt75"><a class="dropdown-item"href="#">주왕산</a></li>
+                        <li  class="kyN"id="mt76"><a class="dropdown-item"href="#">주흘산</a></li>
+                        <li  class="jnN jnS kyS"id="mt77"><a class="dropdown-item"href="#">지리산</a></li>
+                        <li  class="kyS"id="mt78"><a class="dropdown-item"href="#">지리산(통영)</a></li>
+                        <li  class="jnS"id="mt79"><a class="dropdown-item"href="#">천관산</a></li>
+                        <li  class="seo"id="mt80"><a class="dropdown-item"href="#">천마산</a></li>
+                        <li  class="kyS"id="mt81"><a class="dropdown-item"href="#">천성산</a></li>
+                        <li  class="chN chS"id="mt82"><a class="dropdown-item"href="#">천태산</a></li>
+                        <li  class="kyN"id="mt83"><a class="dropdown-item"href="#">청량산</a></li>
+                        <li class="jnS jnN" id="mt84"><a class="dropdown-item"href="#">추월산</a></li>
+                        <li class="seo" id="mt85"><a class="dropdown-item"href="#">축령산</a></li>
+                        <li class="kang" id="mt86"><a class="dropdown-item"href="#">치악산</a></li>
+                        <li class="chS" id="mt87"><a class="dropdown-item"href="#">칠갑산</a></li>
+                        <li class="kang kyN" id="mt88"><a class="dropdown-item"href="#">태백산</a></li>
+                        <li class="kang chN" id="mt89"><a class="dropdown-item"href="#">태화산</a></li>
+                        <li class="kyN"  id="mt90"><a class="dropdown-item"href="#">팔공산</a></li>
+                        <li class="kang" id="mt91"><a class="dropdown-item"href="#">팔봉산</a></li>
+                        <li class="jnS" id="mt92"><a class="dropdown-item"href="#">팔영산</a></li>
+                        <li class="jeju" id="mt93"><a class="dropdown-item"href="#">한라산</a></li>
+                        <li class="seo kang" id="mt94"><a class="dropdown-item"href="#">화악산</a></li>
+                        <li class="kyS" id="mt95"><a class="dropdown-item" href="#">화왕산</a></li>
+                        <li class="kyS" id="mt96"><a class="dropdown-item"href="#">황매산</a></li>
+                        <li class="kyS" id="mt97"><a class="dropdown-item"href="#">황석산</a></li>
+                        <li class="kyN" id="mt98"><a class="dropdown-item"href="#">황악산</a></li>
+                        <li class="kyN" id="mt99"><a class="dropdown-item"href="#">황장산</a></li>
+                        <li class="kyN chN" id="mt100"><a class="dropdown-item" href="#">희양산</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            
+            <script>
+                
+
+                
+
+                
+            </script>
+
+            <!-- 수목도감 ******-->
+            <div class="album py-5 bg-light">
+
+                <div class="cards" style="margin-left: 20px; margin-right: 20px;">
+    
+                    
+
+                    </div>            
+                </div>
+                <!-- 수목도감 ****** -->
+    
+            </div>
+            <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Next</a>
+                </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item active">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="row tm-row">
+                <hr class="col-12">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2020 Xtra Blog Company Co. Ltd.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
